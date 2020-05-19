@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 ### Please see gemfiles/Gemfile.jruby for JRuby env
 ###
 
-gem 'rails', '3.2.8'
+gem 'rails', '5.2.4.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,7 +15,7 @@ gem 'rails', '3.2.8'
 
 
 group :development, :test do
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 2.11.0"
   gem "launchy"
   gem "fabrication"
   unless ENV['TRAVIS']
@@ -55,19 +55,19 @@ platforms :mri do
 end
 
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 5.0.5'
+  gem 'coffee-rails', '>= 4.2.2'
   gem 'uglifier'
 end
 
 gem "i18n"
-gem 'haml-rails'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
+gem 'haml-rails', '>= 0.5.3'
+gem 'jquery-rails', '>= 4.0.1'
+gem 'jquery-ui-rails', '>= 2.0.1'
 gem 'settingslogic'
 gem 'coffee-filter'
 gem 'memoist'
 
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', '>= 2.1.3'
 gem 'dalli'
 
