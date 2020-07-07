@@ -62,8 +62,8 @@ end
 
 gem "i18n"
 gem 'haml-rails'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
+gem 'jquery-rails', '>= 3.1.3'
+gem 'jquery-ui-rails', '>= 2.0.1'
 gem 'settingslogic'
 gem 'coffee-filter'
 gem 'memoist'
