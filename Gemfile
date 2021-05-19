@@ -32,11 +32,11 @@ group :test do
   gem "simplecov"
   gem 'spork'
   platform :mri do
-    gem "cucumber-rails", :require => false
-    gem "capybara-webkit"
+    gem "cucumber-rails", ">= 1.3.0", :require => false
+    gem "capybara-webkit", ">= 0.12.1"
     gem "growl"
     gem "rb-fsevent"
-    gem "webrat"
+    gem "webrat", ">= 0.7.3"
     gem "database_cleaner"
     gem "guard-rspec"
     gem "guard-cucumber"
