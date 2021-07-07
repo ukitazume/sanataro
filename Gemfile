@@ -16,7 +16,7 @@ gem 'rails', '3.2.8'
 
 group :development, :test do
   gem "rspec-rails"
-  gem "launchy"
+  gem "launchy", ">= 2.1.2"
   gem "fabrication"
   unless ENV['TRAVIS']
     platforms :mri_19 do
@@ -32,8 +32,8 @@ group :test do
   gem "simplecov"
   gem 'spork'
   platform :mri do
-    gem "cucumber-rails", :require => false
-    gem "capybara-webkit"
+    gem "cucumber-rails", ">= 1.3.0", :require => false
+    gem "capybara-webkit", ">= 0.12.1"
     gem "growl"
     gem "rb-fsevent"
     gem "webrat"
